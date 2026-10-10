@@ -1,0 +1,27 @@
+# Project Rules for AI-krasota
+
+## General
+- Always refer to docs/PRD.md for business requirements
+- Follow the monorepo structure defined in README.md
+- Use TypeScript for all frontend code
+- Use Python type hints for all backend code
+
+## Code Style
+- Frontend: Next.js App Router, Tailwind CSS, Framer Motion
+- Backend: FastAPI, Pydantic, SQLAlchemy
+- Database: PostgreSQL with Row-Level Security for multi-tenancy
+
+## Multi-tenancy
+- Every table must have tenant_id field (except platform-level tables)
+- Always filter queries by tenant_id
+- Use Row-Level Security policies
+
+## Mobile-First
+- All UI components must work on mobile (320px+)
+- Touch targets minimum 44x44px
+- Test on mobile viewport before committing
+
+## Security
+- Never commit .env files
+- Use environment variables for secrets
+- Implement proper authentication and authorization
