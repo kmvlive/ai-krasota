@@ -1,0 +1,18 @@
+{
+  "name": "ai-krasota",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-krasota — B2B2C SaaS-платформа для бьюти-индустрии (монорепозиторий)",
+  "scripts": {
+    "web:dev": "pnpm --filter @ai-krasota/web dev",
+    "web:build": "pnpm --filter @ai-krasota/web build",
+    "web:lint": "pnpm --filter @ai-krasota/web lint",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@9.12.0"
+}

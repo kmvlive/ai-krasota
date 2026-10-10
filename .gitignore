@@ -1,0 +1,38 @@
+# --- Секреты (см. .cursorrules: никогда не коммитим .env) ---
+.env
+.env.*
+!.env.example
+
+# --- Python / Backend ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+alembic/versions/*.pyc
+
+# --- Node / Frontend ---
+node_modules/
+.next/
+out/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+.pnpm-store/
+
+# --- Docker / локальные данные ---
+pgdata/
+redisdata/
+*.log
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
