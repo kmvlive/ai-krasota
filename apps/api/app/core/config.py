@@ -20,9 +20,15 @@ class Settings(BaseSettings):
 
     # Безопасность
     SECRET_KEY: str = "change-me"
+    JWT_ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     REFRESH_TOKEN_EXPIRE_DAYS: int = 60  # длинные сессии (PRD §15.1)
     FRONTEND_ORIGIN: str = "http://localhost:3000"
+
+    # Rate limiting — защита от брутфорса (PRD §15)
+    RATELIMIT_ENABLED: bool = True
+    LOGIN_ATTEMPTS_LIMIT: int = 5          # неудачных попыток на аккаунт/IP
+    LOGIN_ATTEMPTS_WINDOW_SECONDS: int = 300
 
     # AI (Timeweb, PRD §9)
     TIMEWEB_AI_API_KEY: str = ""

@@ -2,8 +2,10 @@
 
 from fastapi import APIRouter
 
-from app.api.v1.endpoints import health
+from app.api.v1.endpoints import auth, health, users
 
 api_router = APIRouter()
 api_router.include_router(health.router, tags=["health"])
-# TODO (Фаза 1 MVP): auth, tenants, services, bookings, clients, admin
+api_router.include_router(auth.router)
+api_router.include_router(users.router)
+# TODO (Фаза 1 MVP): tenants, services, bookings, clients, admin

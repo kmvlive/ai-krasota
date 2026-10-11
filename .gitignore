@@ -1,38 +1,32 @@
-# --- Секреты (см. .cursorrules: никогда не коммитим .env) ---
-.env
-.env.*
-!.env.example
-
-# --- Python / Backend ---
-__pycache__/
-*.py[cod]
+# --- Python ---
 .venv/
 venv/
+__pycache__/
+*.py[cod]
 *.egg-info/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-.coverage
-htmlcov/
-alembic/versions/*.pyc
 
-# --- Node / Frontend ---
+# --- Node / Next.js ---
 node_modules/
 .next/
 out/
 dist/
-build/
 .turbo/
 *.tsbuildinfo
-.pnpm-store/
 
-# --- Docker / локальные данные ---
-pgdata/
-redisdata/
-*.log
+# --- Env & secrets ---
+.env
+.env.*
+!.env.example
 
 # --- IDE / OS ---
 .idea/
 .vscode/
 .DS_Store
-Thumbs.db
+
+# --- Logs / DB artifacts ---
+*.log
+*.sqlite3
+celerybeat-schedule*
