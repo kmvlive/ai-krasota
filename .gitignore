@@ -1,0 +1,36 @@
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node / Next.js ---
+node_modules/
+# Менеджер пакетов — pnpm (см. pnpm-workspace.yaml); npm-артефакты запрещены
+package-lock.json
+npm-debug.log*
+yarn-error.log*
+.next/
+out/
+dist/
+.turbo/
+*.tsbuildinfo
+
+# --- Env & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+.DS_Store
+
+# --- Logs / DB artifacts ---
+*.log
+*.sqlite3
+celerybeat-schedule*

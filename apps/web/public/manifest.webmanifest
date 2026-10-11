@@ -1,0 +1,10 @@
+{
+  "name": "AI-krasota",
+  "short_name": "AI-krasota",
+  "description": "SaaS-платформа для бьюти-индустрии",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#7c3aed",
+  "icons": []
+}
